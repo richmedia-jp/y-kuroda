@@ -1,5 +1,2 @@
-index template
-
-<?php echo $this->hello; ?>
-
-<?php echo $test ?>
+top#index<br>
+this->hello : <?php echo $this->hello; ?>

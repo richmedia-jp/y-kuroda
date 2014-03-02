@@ -3,8 +3,8 @@
 class top_controller extends controller {
 
   public function index() {
-    echo "here is index !!!!!<br>";
-    $this->hello = "this->hello?<br>";
+    $this->hello = "this->hello?";
+    $this->test = "testtesttest";
   }
 
 }
