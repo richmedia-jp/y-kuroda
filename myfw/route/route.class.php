@@ -11,10 +11,11 @@ class Route {
     $this->ParseRequestUri();
   }
 
+  // if REQUEST_URI is null, set top/index
   public function ParseRequestUri(){
     $uri_arr = explode('/',$this->request_uri);
-    $this->controller_name = $uri_arr[2];
-    $this->action_name = $uri_arr[3];
+    $this->controller_name = empty($uri_arr[2]) ? 'top' : $uri_arr[2];
+    $this->action_name = empty($uri_arr[3]) ? 'index' : $uri_arr[3];
   }
 
   public function getControllerName(){
