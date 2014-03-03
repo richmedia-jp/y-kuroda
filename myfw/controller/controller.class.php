@@ -12,8 +12,9 @@ class controller {
     $this->{$this->route->getActionName()}();
   }
 
-  public function renderView(){
+  public function executeView(){
     $view = new View($this->route);
+
   }
 
 }

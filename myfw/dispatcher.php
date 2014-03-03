@@ -17,7 +17,7 @@ class Dispatcher {
 
     $controller_instance = new $controller_class_name($route);
     $controller_instance->executeAction();
-    $controller_instance->renderView();
+    $controller_instance->executeView();
   }
 
 }
